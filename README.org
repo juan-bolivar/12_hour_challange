@@ -1,22 +1,23 @@
-* Informacion
+* Informacion [2/2]
 
-- Traer informacion de BITCOIN cada 10 minutos
-- Manipular la informacion y dejarala en una base
-  de datos
+- [X] Traer informacion de BITCOIN cada 10 minutos 
+- [X] Manipular la informacion y dejarala en una base de datos
   
-* Visualizacion 
+* Visualizacion [1/5]
 
-- Visualizar en una grafica , la informacion del precio
-  - Luego colocar la informacion de Bollinger Bands
-  - MA
-  - Demas Visualizaciones
-- Colocar para que se visualice por medio de barras
+- [X] Visualizar en una grafica , la informacion del precio
+- [ ] Luego colocar la informacion de Bollinger Bands
+- [ ] MA
+- [ ] Demas Visualizaciones
+- [ ] Colocar para que se visualice por medio de barras
 
-* Machine learning
+* Machine learning [0/1]
 
-- Implementar Machine learning para predecir el proximo
+- [ ] Implementar Machine learning para predecir el proximo
   precio en el minuto siguiente.
   
-  - Metodos lineales
-  - stacking Ensamble
-
+  - [ ] Pronosticar si el ultimo dia va a subir o bajar la accion
+  - [ ] Metodos lineales
+  - [ ] stacking Ensamble
+  
+    
