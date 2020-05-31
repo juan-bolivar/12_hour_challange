@@ -1,36 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{ js_r|indent(4)|safe }}
+    {{ css_r|indent(4)|safe }}
+    {{ script |indent(4)| safe }}
+    <meta charset="UTF-8">
+  </head>
 
-        <h1>Historico Graficador acciones</h1>
+
+  <h1>Historico Graficador acciones</h1>
    
         
-        <form action="/" method="post">
+  <body>
+    <form action="/" method="post">
 
-	<input type="date" id="start" name="start"
-        value="2016-07-22" min="2015-01-01" max="2019-12-31">
+      <input type="date" id="start" name="start"
+             value="2016-07-22" min="2015-01-01" max="2019-12-31">
 
-        <input type="date" id="start" name="finish"
-        value="2019-07-30" min="2015-01-01" max="2019-12-31">
+      <input type="date" id="start" name="finish"
+             value="2019-07-30" min="2015-01-01" max="2019-12-31">
 
-	<br>
-        <label for="ticket">Ingrese la Accion</label>
-	<br>
-        <input name="ticket" id="ticket" list="tickets">
+      <br>
+      <label for="ticket">Ingrese la Accion</label>
+      <br>
+      <input name="ticket" id="ticket" list="tickets">
         
 
-        <br>
-        <input formmethod="post" type="submit" value="Graficar">
-        </form>
+      <br>
+      <input formmethod="post" type="submit" value="Graficar">
+    </form>
 
-	<form action="/" method="get">
-	  <input type="submit" value="Borrar">
-	</form>
+    <form action="/" method="get">
+      <input type="submit" value="Borrar">
+    </form>
 	
 	
-        <datalist id="tickets">
-           <option>AAPL</option>
-           <option>BTC-USD</option> 
-           <option>GOOG</option> 
-        </datalist>
+    <datalist id="tickets">
+      <option>AAPL</option>
+      <option>BTC-USD</option> 
+      <option>GOOG</option> 
+    </datalist>
 
+    <div style="display: inline-block;">
+      {{ div | safe }}
+    </div>
 
-	<img src={{url}} alt="Chart" height="auto" width="1000px">
-    
+  </body>  
+
+</html>
