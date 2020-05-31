@@ -32,16 +32,6 @@ def hello_world():
         subprocess.check_call("bash ../Informacion/script.sh '%s' '%s' '%s' > temp.csv " % (ticket,inicio,fin),   shell=True)
 
         df = pd.read_csv('temp.csv',sep=',')
-        #fig, ax = plt.subplots(figsize=(20,10))
-        #ax.plot(df['Date'],df['Close'])
-        #plt.ylabel('Close')
-        #plt.xlabel('Date')
-        #plt.title(ticket + " From %s to %s" % (inicio,fin) )
-        #ax.set_xticks(df['Date'][::10])       
-        #ax.locator_params(axis='x', nbins=10)
-        #rand = randint(0,100000)
-        #plt.savefig('static/images/plot_' + str(rand) + '.png')
-
         df['Date'] = pd.to_datetime(df['Date'])
 
         
