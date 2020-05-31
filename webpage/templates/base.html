@@ -3,28 +3,28 @@
    
         
         <form action="/" method="post">
-
-	<input type="date" id="start" name="start"
-        value="2016-07-22" min="2015-01-01" max="2019-12-31">
+        <input type="date" id="start" name="start"
+        value="2016-07-22"
+        min="2015-01-01" max="2019-12-31">
 
         <input type="date" id="start" name="finish"
-        value="2019-07-30" min="2015-01-01" max="2019-12-31">
+        value="2019-07-30"
+        min="2015-01-01" max="2019-12-31">
 
 	<br>
-        <label for="ticket">Ingrese la Accion</label>
-	<br>
+        <label for="ticket">Ingrese la Accion</label><br>
         <input name="ticket" id="ticket" list="tickets">
         
 
         <br>
+        
         <input formmethod="post" type="submit" value="Graficar">
         </form>
 
-	<form action="/" method="get">
-	  <input type="submit" value="Borrar">
-	</form>
-	
-	
+
+
+
+	  
         <datalist id="tickets">
            <option>AAPL</option>
            <option>BTC-USD</option> 
@@ -32,5 +32,4 @@
         </datalist>
 
 
-	<img src={{url}} alt="Chart" height="auto" width="1000px">
     
